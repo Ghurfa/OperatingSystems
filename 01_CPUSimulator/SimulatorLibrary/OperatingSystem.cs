@@ -10,7 +10,8 @@ namespace SimulatorLibrary
     {
         IInstruction[] Code = new IInstruction[]
         {
-
+            new SetInstruction(32, 8),
+            new MulInstruction()
         };
 
         public void CopyCode(IInstruction[] buffer, int index) => Code.CopyTo(buffer, index);

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "03_SimulProgram": {
+      "commandName": "Project",
+      "commandLineArgs": "0"
+    }
+  }
+}

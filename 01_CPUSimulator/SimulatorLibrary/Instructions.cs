@@ -15,7 +15,7 @@ namespace SimulatorLibrary
         StoreAbs,
         Load,
         LoadAbs,
-        ReadIO,
+        Syscall,
     }
 
     public interface IInstruction
@@ -112,10 +112,9 @@ namespace SimulatorLibrary
         public int Address { get; }
         public int Register { get; }
     }
-    public struct ReadIOInstruction : IInstruction
+    public struct SyscallInstruction : IInstruction
     {
         public InstructionType Type { get; }
-        public int Location { get; }
     }
 
 }

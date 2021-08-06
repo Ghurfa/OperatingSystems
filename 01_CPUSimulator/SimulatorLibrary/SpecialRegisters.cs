@@ -9,6 +9,7 @@ namespace SimulatorLibrary
     public enum SpecialRegisters
     {
         SyscallType = 15,
+        FreeChainStart = 23,
         IsPrivileged = 24,
         IPOffset = 25,
         RAMStart = 26,

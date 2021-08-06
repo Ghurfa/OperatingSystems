@@ -17,6 +17,8 @@ namespace SimulatorLibrary
 
         public RAM Ram { get; private set; }
 
+        private IOperatingSystem OS;
+
         public CPU()
         {
             Registers = new Registers(AccessError);
@@ -79,20 +81,11 @@ namespace SimulatorLibrary
                     Registers[loadAbs.Register] = Ram[loadAbs.Address];
                     break;
                 case InstructionType.Syscall:
-                    RunScheduler();
+                    OS.RunScheduler();
                     break;
                 default:
                     throw new NotImplementedException();
             }
-        }
-
-        public void RunScheduler()
-        {
-            /* 1. Calculate Quantum
-             * 2. If blocking, remove from main queue and add to blocking queue
-             */
-            Registers.SetPrivileged(SpecialRegisters.SavedIP, IP);
-            IP = 0;
         }
     }
 }

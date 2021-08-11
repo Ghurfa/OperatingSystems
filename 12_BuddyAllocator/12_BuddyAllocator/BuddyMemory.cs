@@ -98,7 +98,7 @@ namespace _12_BuddyAllocator
             while (order < MaxLevel)
             {
                 int buddyAddr = address ^ (Unit << order);
-                if ((arr[buddyAddr] & 1) == 0)
+                if ((arr[buddyAddr] & 1) == 0 && (arr[buddyAddr] >> 1) == order)
                 {
                     order++;
                     if (buddyAddr < address)

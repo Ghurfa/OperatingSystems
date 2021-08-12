@@ -8,7 +8,7 @@ namespace _13_Simulator
     {
         static void Main(string[] args)
         {
-            Assembly asm = Assembly.GetAssembly(typeof(Program));
+
         }
     }
 }

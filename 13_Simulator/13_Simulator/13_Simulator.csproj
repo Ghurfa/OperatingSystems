@@ -6,4 +6,8 @@
     <RootNamespace>_13_Simulator</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Computer\Computer.csproj" />
+  </ItemGroup>
+
 </Project>

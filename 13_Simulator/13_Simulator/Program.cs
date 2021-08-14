@@ -10,7 +10,7 @@ namespace _13_Simulator
         static void Main(string[] args)
         {
             Bootloader bootloader = Bootloader.Instance;
-            bootloader.Run(@"..\..\..\..\disk.vd");
+            bootloader.Run(@"..\..\..\..\disk.vd", out SimulatorInterfaces.IOperatingSystem os);
         }
     }
 }

@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Simulator", "13_Simulator\13_Simulator.csproj", "{3BDAB8B8-12AB-4CD9-B66F-6AA6469E2580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskCreator", "DiskCreator\DiskCreator.csproj", "{93673D94-6301-4D50-937E-B4C3B00A4A57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiskCreator", "DiskCreator\DiskCreator.csproj", "{93673D94-6301-4D50-937E-B4C3B00A4A57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatingSystem", "OperatingSystem\OperatingSystem.csproj", "{82A61A08-7B19-4A70-8AAE-068BFA56D44D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatingSystem", "OperatingSystem\OperatingSystem.csproj", "{82A61A08-7B19-4A70-8AAE-068BFA56D44D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computer", "Computer\Computer.csproj", "{88EE59D4-9AEB-4892-8DE4-CF306394B8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Computer", "Computer\Computer.csproj", "{88EE59D4-9AEB-4892-8DE4-CF306394B8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatorInterfaces", "OSInterfaces\SimulatorInterfaces.csproj", "{F01A2FEA-8FB3-4016-AF0A-E276F0845E7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{88EE59D4-9AEB-4892-8DE4-CF306394B8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88EE59D4-9AEB-4892-8DE4-CF306394B8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88EE59D4-9AEB-4892-8DE4-CF306394B8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01A2FEA-8FB3-4016-AF0A-E276F0845E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01A2FEA-8FB3-4016-AF0A-E276F0845E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01A2FEA-8FB3-4016-AF0A-E276F0845E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01A2FEA-8FB3-4016-AF0A-E276F0845E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

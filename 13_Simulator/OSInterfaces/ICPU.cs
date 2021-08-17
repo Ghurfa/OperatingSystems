@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface IBootloader
+    public interface ICPU
     {
-        public BootloaderResult Run(string diskPath, IComputer computer, out IOperatingSystem os);
+        public Dictionary<int, Action<object[]>> TrapTable { get; }
     }
 }

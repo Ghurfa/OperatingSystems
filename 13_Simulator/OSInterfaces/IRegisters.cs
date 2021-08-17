@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface IBootloader
+    public interface IRegisters
     {
-        public BootloaderResult Run(string diskPath, IComputer computer, out IOperatingSystem os);
+        public int this[int i] { get; set; }
+        public bool KernelMode { get; set; }
     }
 }

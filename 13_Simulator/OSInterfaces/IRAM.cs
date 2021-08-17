@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface IBootloader
+    public interface IRAM
     {
-        public BootloaderResult Run(string diskPath, IComputer computer, out IOperatingSystem os);
+        public int Size { get; }
+        public int this[int index] { get; set; }
     }
 }

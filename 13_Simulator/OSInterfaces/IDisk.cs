@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface IBootloader
+    public interface IDisk
     {
-        public BootloaderResult Run(string diskPath, IComputer computer, out IOperatingSystem os);
+        public void WriteDisk(int address, byte[] buffer, int start, int length);
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Computer
+namespace SimulatorInterfaces
 {
     public enum BootloaderResult
     {

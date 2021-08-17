@@ -11,7 +11,7 @@ namespace Computer
         public static Bootloader Instance { get; } = new Bootloader();
         private Bootloader() { }
 
-        public BootloaderResult Run(string diskPath, out IOperatingSystem os)
+        public BootloaderResult Run(string diskPath, IComputer computer, out IOperatingSystem os)
         {
             if (!File.Exists(diskPath))
             {
@@ -60,7 +60,7 @@ namespace Computer
                 {
                     if (typeof(IOperatingSystem).IsAssignableFrom(type))
                     {
-                        os = Activator.CreateInstance(type) as IOperatingSystem;
+                        os = Activator.CreateInstance(type, computer) as IOperatingSystem;
                         //PropertyInfo propInfo = type.GetProperty("Instance", BindingFlags.Static | BindingFlags.Public);
                         //if (propInfo == null) break;
 

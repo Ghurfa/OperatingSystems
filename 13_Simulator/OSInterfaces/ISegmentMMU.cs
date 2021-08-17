@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface IMemoryManagementUnit
+    public interface ISegmentMMU
     {
 
     }

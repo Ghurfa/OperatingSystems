@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadCounter", "MultiThreadCounter\MultiThreadCounter.csproj", "{D6512F9E-5037-447E-A874-97790C57F169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6512F9E-5037-447E-A874-97790C57F169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6512F9E-5037-447E-A874-97790C57F169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6512F9E-5037-447E-A874-97790C57F169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6512F9E-5037-447E-A874-97790C57F169}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {313D50D4-EBE4-4F7B-8BE8-6F22638AC11B}
+	EndGlobalSection
+EndGlobal

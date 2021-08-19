@@ -13,11 +13,13 @@ namespace OperatingSystem
         IDisk Disk;
 
         public IMemoryManager MemoryManager { get; }
+        public IScheduler Scheduler { get; }
 
         public OperatingSystem(IComputer computer)
         {
             Computer = computer;
             MemoryManager = new BuddyMemoryManager(Computer, this);
+            Scheduler = new Scheduler();
         }
 
         public void EntryPoint()

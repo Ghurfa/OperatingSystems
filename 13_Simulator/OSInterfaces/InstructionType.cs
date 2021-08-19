@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimulatorInterfaces
 {
-    public interface ISegmentMMU
+    public enum InstructionType
     {
-
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Computer
@@ -27,6 +28,7 @@ namespace Computer
             Bootloader.Instance.Run(@"..\..\..\..\disk.vd", this, out IOperatingSystem os);
             OperatingSystem = os;
             os.EntryPoint();
+            CPU.StartScheduleTimer();
         }
     }
 }

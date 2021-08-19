@@ -8,5 +8,6 @@ namespace SimulatorInterfaces
 {
     public interface IScheduler
     {
+        public void Run();
     }
 }

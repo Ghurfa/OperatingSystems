@@ -9,5 +9,6 @@ namespace SimulatorInterfaces
     public interface ICPU
     {
         public Dictionary<int, Action<object[]>> TrapTable { get; }
+        public void StartScheduleTimer();
     }
 }

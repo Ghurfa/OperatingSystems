@@ -6,7 +6,6 @@ namespace OperatingSystem
     public class BuddyMemoryManager : IMemoryManager
     {
         private IComputer Computer;
-        private IRAM Mem;
         private OperatingSystem OS;
 
         private readonly int Size;
@@ -18,7 +17,7 @@ namespace OperatingSystem
             Computer = computer;
             OS = os;
             Unit = 16;
-            Size = computer.RAM.Size; //Probably breaks when size is not a power of 2
+            Size = computer.RAM.Size; //I sure hope this is a power of 2
             MaxLevel = (int)Math.Log2(Size / Unit);
         }
 

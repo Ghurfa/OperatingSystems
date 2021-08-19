@@ -9,5 +9,6 @@ namespace SimulatorInterfaces
     public interface IDisk
     {
         public void WriteDisk(int address, byte[] buffer, int start, int length);
+        public void ReadDisk(int address, byte[] buffer, int start, int length);
     }
 }
